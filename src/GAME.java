@@ -62,7 +62,7 @@ public class GAME extends Canvas implements Runnable {
                 }
                 if (Pipes.get(i).getX()>=0) {
                     Rectangle PipeTop = new Rectangle(Pipes.get(i).getX(), 0, 120, Pipes.get(i).getY());
-                    Rectangle PipeBot = new Rectangle(Pipes.get(i).getX(), Pipes.get(i).getY() + 120, 120, Pipes.get(i).getY());
+                    Rectangle PipeBot = new Rectangle(Pipes.get(i).getX(), Pipes.get(i).getY() + 120, 120, 700-Pipes.get(i).getY());
 
                     if (Bird.intersects(PipeTop) || Bird.intersects(PipeBot)) {
                         GameOver();
